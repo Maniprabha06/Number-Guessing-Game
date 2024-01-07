@@ -1,0 +1,87 @@
+body{
+    background-image: url('https://thumbs.dreamstime.com/z/abstract-math-number-background-vector-illustration-business-design-black-white-colors-random-sign-flying-border-frame-school-70831500.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
+    font-family: verdana;
+    text-align: center;
+}
+h1{
+    padding-top: 12%;
+}
+#new{
+    background: rgb(29,27,62);
+    background: linear-gradient(90deg, rgba(29,27,62,1) 10%, rgba(212,84,84,1) 35%, rgba(13,60,74,1) 76%, rgba(21,109,126,1) 100%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: none;
+}
+
+.but{
+    display: flex;
+    justify-content: center;
+} 
+#guessings{
+    display: none;;
+}
+input[type=number]{
+    background-color: rgb(32, 45, 52);
+    color: #FFFFFF;
+    width: 150px;
+    height: 35px;
+}
+
+.button-1 {
+    background: rgb(29,27,62);
+    background: linear-gradient(90deg, rgba(29,27,62,1) 10%, rgba(212,84,84,1) 35%, rgba(13,60,74,1) 76%, rgba(21,109,126,1) 100%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #e14569;
+}

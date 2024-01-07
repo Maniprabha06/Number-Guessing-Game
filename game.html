@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="games.css">
+
+</head>
+<body>
+    <h1>Number Guessing Game</h1><br><br>
+    <p>The game is to take a number between 1 to 100 and you need to guess the number within 10 attempts</p>
+    <p>We'll help you with some clues.Let's see how many attempts will it takes for you to guess.</p><br><br>
+    <p>Enter the value: <input id="num" type="number"> <button class="button-1" onclick="MyFunction()">Start</button></p><br><br>
+    <p id="guessings">Previous guess: </p>
+    <p id="alert"></p>
+    <p id="result"></p><br>
+    <div class="but">
+        <button id="new" onclick="location.reload()">Start a new game</button>
+    </div>
+    
+</body>
+<script>
+    let count=0;
+    function randomgenerate()
+    {
+            low=0;
+            high=100;
+            var number=(Math.floor(Math.random()*(101)));
+            if(number==0){
+                number=1;
+            }
+            //return number;
+            console.log (number);
+            return number;
+    }
+       //randomgenerate();
+    num=randomgenerate();
+      
+
+    function MyFunction(){
+
+        if(count>10){
+            alert("Chances are done,Start a new game!!");
+            document.getElementById('num').disabled=true;
+            document.getElementById('new').style.display="block";
+        }
+        else{
+            count=count+1;
+            var val=document.getElementById("num").value;
+            document.getElementById("guessings").style.display="block";
+            document.getElementById("guessings").innerHTML+=val+" ";
+            if(val>num){
+                document.getElementById("alert").innerHTML="Wrong";
+                document.getElementById("alert").style.backgroundColor="red";
+                document.getElementById("result").innerHTML="Guessed value is greater than the answer";
+            }
+            else if(val<num){
+                document.getElementById("alert").innerHTML="Wrong";
+                document.getElementById("alert").style.backgroundColor="red";
+                document.getElementById("result").innerHTML="Guessed value is lesser than the answer";
+
+            }
+            else{
+                document.getElementById("alert").innerHTML="Correct";
+                document.getElementById("alert").style.backgroundColor="green";
+                document.getElementById("result").innerHTML="Correct value is"+" "+num;
+                document.getElementById("num").disabled=true;
+            }
+        }
+    }
+</script>
+</html>
